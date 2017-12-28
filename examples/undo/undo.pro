@@ -1,2 +1,2 @@
 TEMPLATE = subdirs
-SUBDIRS = editor
+SUBDIRS = editor quickundo

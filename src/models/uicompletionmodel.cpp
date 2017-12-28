@@ -338,26 +338,12 @@ void UiCompletionModel::resetModel()
 }
 
 /*!
-    \property UiCompletionModel::modelSorting
-    \brief the way the model is sorted
+    \property UiCompletionModel::setCaseSensitivity
+    \brief the case sensitivity for models which are going to sort.
 
-    By default, no assumptions are made about the order of the items
-    in the model that provides the completions.
+    [To be implemented.]
 
-    If the model's data for the completionColumn() and completionRole() is sorted in
-    ascending order, you can set this property to \l CaseSensitivelySortedModel
-    or \l CaseInsensitivelySortedModel. On large models, this can lead to
-    significant performance improvements because the completer object can
-    then use a binary search algorithm instead of linear search algorithm.
-
-    The sort order (i.e ascending or descending order) of the model is determined
-    dynamically by inspecting the contents of the model.
-
-    \b{Note:} The performance improvements described above cannot take place
-    when the completer's \l caseSensitivity is different to the case sensitivity
-    used by the model's when sorting.
-
-    \sa setCaseSensitivity(), UiCompletionModel::ModelSorting
+    \sa setModelSorting(), UiCompletionModel::ModelSorting
 */
 void UiCompletionModel::setCaseSensitivity(Qt::CaseSensitivity cs)
 {

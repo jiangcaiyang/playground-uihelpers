@@ -12,9 +12,9 @@ SOURCES += uiquickcompletionmodel.cpp
 
 HEADERS += uiquickcompletionmodel_p.h
 
-target.path = $$[QT_INSTALL_IMPORTS]/$$TARGETPATH
+target.path = $$[QT_INSTALL_QML]/$$TARGETPATH
 
 qmldir.files += $$PWD/qmldir
-qmldir.path +=  $$[QT_INSTALL_IMPORTS]/$$TARGETPATH
+qmldir.path +=  $$[QT_INSTALL_QML]/$$TARGETPATH
 
 INSTALLS += target qmldir

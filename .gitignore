@@ -23,3 +23,4 @@ examples/models/fsviewer/fsviewer
 examples/models/completionmodel/completionmodel
 *.app
 *.dylib
+CMakeLists.txt
