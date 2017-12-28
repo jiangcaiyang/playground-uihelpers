@@ -4,9 +4,6 @@ load(qt_module)
 QPRO_PWD   = $$PWD
 QT += core core-private gui gui-private quick-private qml-private #v8-private
 
-include(../modules/qt_uihelpers.pri)
-
-
 DEFINES += UIHELPERS_LIB
 DEFINES += $$quote(QT_BEGIN_MOC_NAMESPACE=\"QT_USE_NAMESPACE QT_USE_NAMESPACE_UIHELPERS\")
 

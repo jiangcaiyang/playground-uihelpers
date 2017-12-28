@@ -18,7 +18,9 @@
 %mastercontent = (
 );
 %modulepris = (
-    "UiHelpers" => "$basedir/modules/qt_uihelpers.pri",
+    # The following file is obsolete as this repository's version follows Qt
+    # which builds it.
+    #"UiHelpers" => "$basedir/modules/qt_uihelpers.pri",
 );
 
 # Module dependencies.

@@ -2,4 +2,4 @@ load(qt_parts)
 
 SUBDIRS += imports
 
-OTHER_FILES += README
+OTHER_FILES += README sync.profile
