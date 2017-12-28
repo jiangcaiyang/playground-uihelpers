@@ -1,2 +1,2 @@
 load(qt_parts)
-SUBDIRS += imports tests
+#SUBDIRS += imports tests

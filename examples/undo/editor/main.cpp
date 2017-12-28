@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
     Stack stack;
     v.rootContext()->setContextProperty("stack", &stack);
 
-    v.setSource(QUrl::fromLocalFile("main.qml"));
+    v.setSource(QUrl( "qrc:/main.qml" ) );
 
     v.show();
 

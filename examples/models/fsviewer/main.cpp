@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
     v.setTitle(QObject::tr("Dir View"));
     v.setResizeMode(QQuickView::SizeRootObjectToView);
     v.resize(640, 480);
-    v.setSource(QUrl::fromLocalFile("main.qml"));
+    v.setSource( QUrl( "qrc:/main.qml" ) );
 
     v.show();
 

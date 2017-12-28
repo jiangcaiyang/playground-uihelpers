@@ -54,7 +54,7 @@ QT_BEGIN_NAMESPACE_UIHELPERS
 
 class UIProxyModelPrivate;
 
-class Q_WIDGETS_EXPORT UIProxyModel : public QAbstractItemModel
+class UIHELPERS_EXPORT UIProxyModel : public QAbstractItemModel
 {
     Q_OBJECT
 
