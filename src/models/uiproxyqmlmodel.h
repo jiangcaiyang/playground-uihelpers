@@ -66,7 +66,7 @@ public:
     UiProxyQmlModel(QObject *parent = 0);
 
     ListType updateSource(const QVariant &sourceModel);
-    QHash<int, QByteArray> roleNames();
+    virtual QHash<int, QByteArray> roleNames( ) const;
 protected:
     void createFromList(const QVariantList &list);
     void createFromQuickList(QQmlListModel *list);

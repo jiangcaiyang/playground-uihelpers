@@ -68,7 +68,7 @@ UiProxyQmlModel::ListType UiProxyQmlModel::updateSource(const QVariant &sourceMo
 }
 
 
-QHash<int, QByteArray> UiProxyQmlModel::roleNames()
+QHash<int, QByteArray> UiProxyQmlModel::roleNames( ) const
 {
     QHash<int, QByteArray> roles;
     roles.insert(Qt::DisplayRole, "display");

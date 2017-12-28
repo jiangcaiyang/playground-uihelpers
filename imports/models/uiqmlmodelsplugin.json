@@ -1,1 +1,4 @@
-{}
+{
+    "Keys": [ "QmlModelsPlugin" ],
+    "uri": [ "Playground.UiHelpers.Models" ]
+}

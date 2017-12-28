@@ -18,3 +18,4 @@ qmldir.files += $$PWD/qmldir
 qmldir.path +=  $$[QT_INSTALL_QML]/$$TARGETPATH
 
 INSTALLS += target qmldir
+OTHER_FILES += uiqmlmodelsplugin.json

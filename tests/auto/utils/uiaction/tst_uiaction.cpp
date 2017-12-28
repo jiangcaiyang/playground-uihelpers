@@ -82,7 +82,7 @@ private slots:
 
 private:
     int m_lastEventType;
-    int m_keyboardScheme;
+    //int m_keyboardScheme;
     UiAction *m_lastAction;
     QObject *m_tstObject;
 };
