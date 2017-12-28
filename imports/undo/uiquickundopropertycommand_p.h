@@ -53,8 +53,8 @@ class UiQuickUndoPropertyCommand : public UiQuickBaseUndoCommand
 {
     Q_OBJECT
 
-    Q_PROPERTY(QVariantList properties READ properties WRITE setProperties NOTIFY propertiesChanged)
-
+    Q_PROPERTY( QVariantList properties READ properties
+                WRITE setProperties NOTIFY propertiesChanged)
 public:
     UiQuickUndoPropertyCommand(QObject *parent = 0);
     ~UiQuickUndoPropertyCommand();
