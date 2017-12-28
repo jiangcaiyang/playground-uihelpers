@@ -1,1 +1,2 @@
+module Playground.UiHelpers.UndoFramework
 plugin qmlundoframeworkplugin

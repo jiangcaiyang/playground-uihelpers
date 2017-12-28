@@ -48,7 +48,7 @@
 class QmlUndoFrameworkPlugin : public QQmlExtensionPlugin
 {
     Q_OBJECT
-    Q_PLUGIN_METADATA(IID "org.qt-project.Qt.QQmlExtensionPlugin" FILE "uiqmlundoframeworkplugin.json")
+    Q_PLUGIN_METADATA(IID QQmlExtensionInterface_iid FILE "uiqmlundoframeworkplugin.json")
 
 public:
     virtual void registerTypes(const char* uri);
@@ -59,7 +59,10 @@ void QmlUndoFrameworkPlugin::registerTypes(const char* uri)
     Q_ASSERT(QLatin1String(uri) == QLatin1String("Playground.UiHelpers.UndoFramework"));
 
     qmlRegisterType<UiQuickUndoStack>(uri, 1, 0, "UndoStack");
-    qmlRegisterUncreatableType<UiQuickBaseUndoCommand>(uri, 1, 0, "", "");
+    qmlRegisterUncreatableType<UiQuickBaseUndoCommand>(
+                uri, 1, 0,
+                "UiQuickBaseUndoCommand",
+                "UiQuickBaseUndoCommand is not created directly." );
     qmlRegisterType<UiQuickUndoCommand>(uri, 1, 0, "UndoCommand");
     qmlRegisterType<UiQuickUndoPropertyCommand>(uri, 1, 0, "UndoPropertyCommand");
 }
