@@ -1,0 +1,75 @@
+include($QT_INSTALL_DOCS/global/qt-html-templates-offline.qdocconf)
+include($QT_INSTALL_DOCS/global/qt-module-defaults.qdocconf)
+
+project                 = UIHelpers
+description             = Qt UIHelpers Reference Documentation
+url                     = http://doc.qtdream.com/uihelpers
+version                 = $QT_VERSION
+
+qhp.projects            = UIHelpers
+
+qhp.UIHelpers.file                = uihelpers.qhp
+qhp.UIHelpers.namespace           = com.qtdream.uihelpers.$QT_VERSION_TAG
+qhp.UIHelpers.virtualFolder       = uihelpers
+qhp.UIHelpers.indexTitle          = Qt UIHelpers
+qhp.UIHelpers.indexRoot           =
+
+qhp.UIHelpers.filterAttributes    = uihelpers $QT_VERSION qtrefdoc
+qhp.UIHelpers.customFilters.Qt.name = UIHelpers $QT_VERSION
+qhp.UIHelpers.customFilters.Qt.filterAttributes = uihelpers $QT_VERSION
+qhp.UIHelpers.subprojects         = overviews classes qmltypes examples
+qhp.UIHelpers.subprojects.overviews.title = Overview
+qhp.UIHelpers.subprojects.overviews.indexTitle = Qt UIHelpers
+qhp.UIHelpers.subprojects.overviews.selectors = fake:page,group,module
+qhp.UIHelpers.subprojects.classes.title = C++ Classes
+qhp.UIHelpers.subprojects.classes.indexTitle = Qt UIHelpers C++ Classes
+qhp.UIHelpers.subprojects.classes.selectors = class fake:headerfile
+qhp.UIHelpers.subprojects.classes.sortPages = true
+qhp.UIHelpers.subprojects.examples.title = Examples
+qhp.UIHelpers.subprojects.examples.indexTitle = Qt UIHelpers Examples
+qhp.UIHelpers.subprojects.examples.selectors = fake:example
+
+tagfile                 = ../../../doc/uihelpers/uihelpers.tags
+
+headerdirs  += .. 
+
+sourcedirs  += .. 
+
+exampledirs += ../../../examples/uihelpers \
+               snippets/
+
+# Specify the install path under QT_INSTALL_EXAMPLES
+examplesinstallpath = uihelpers
+
+imagedirs   += images
+
+depends += qtcore qtdoc qtgui
+
+HTML.footer = \
+    "        </div>\n" \
+    "       </div>\n" \
+    "   </div>\n" \
+    "   </div>\n" \
+    "</div>\n" \
+    "<div class=\"footer\">\n" \
+    "        <div class=\"qt13a-copyright\" id=\"copyright\">\n" \
+    "            <div class=\"qt13a-container\">\n" \
+    "            <p>\n" \
+    "              <acronym title=\"Copyright\">&copy;</acronym> 2017 jiangcaiyang. \n" \
+    "              Documentation contributions included herein are the copyrights of\n" \
+    "              their respective owners.</p>\n" \
+    "            <p>\n" \
+    "              The documentation provided herein is licensed under the terms of the\n" \
+    "              <a href=\"http://www.gnu.org/licenses/fdl.html\">GNU Free Documentation\n" \
+    "              License version 1.3</a> as published by the Free Software Foundation.</p>\n" \
+    "            <p>\n" \
+    "              Documentation sources may be obtained from <a href=\"http://doc.qtdream.com/uihelpers\">\n" \
+    "              http://doc.qtdream.com/uihelpers</a>.</p>\n" \
+    "            <p>\n" \
+    "              Qt and their respective logos are trademarks of Digia Plc \n" \
+    "              in Finland and/or other countries worldwide. All other trademarks are property\n" \
+    "              of their respective owners. <a title=\"Privacy Policy\"\n" \
+    "              href=\"http://en.gitorious.org/privacy_policy/\">Privacy Policy</a></p>\n" \
+    "            </div>\n" \
+    "        </div>\n" \
+    "</div>\n" \

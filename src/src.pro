@@ -18,3 +18,7 @@ HEADERS += \
 
 include(utils/utils.pri)
 include(models/models.pri)
+
+# 这些是文档的部分
+OTHER_FILES += $$QMAKE_DOCS doc/src/*.qdoc
+QMAKE_DOCS = $$PWD/doc/uihelpers.qdocconf

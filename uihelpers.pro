@@ -1,2 +1,3 @@
 load(qt_parts)
-#SUBDIRS += imports tests
+
+OTHER_FILES += README
